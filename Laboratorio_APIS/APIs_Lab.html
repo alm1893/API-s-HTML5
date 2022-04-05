@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video_CSS.css" type="text/css">
+    <title>Document</title>
+</head>
+<body class="fondo">
+   <h1 class="h1">Carga de ficheros</h1>
+   <input type="file" name="files[]" onchange= "handleFileSelect(event)" style="display: block;" class="center">
+   <output id="list" class="vid"></output>
+   <figure>
+       <video>
+        Si no puedes ver este video descárgalo en <a href="https://www.bejob.com/"></a>   
+       </video>
+       <div style="display:none" id="btns" class="buttons">
+           <button type="button" class="boton" onclick="document.getElementById('video').play();">Reproducir</button>
+           <button type="button" class="boton" onclick="document.getElementById('video').pause();">Pausa</button>
+           <button type="button" class="boton" onclick="document.getElementById('video').volume += 0.1;">Subir volumen</button>
+           <button type="button" class="boton" onclick="document.getElementById('video').volume -= 0.1;">Bajar volumen</button>
+       </div>
+   </figure>
+   <script src="video_js.js"></script>
+</body>
+</html>
